@@ -1,0 +1,86 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Archive | Oniarticle - Scientific Papers</title>
+    <meta name="description" content="Browse the latest research papers and articles on Oniarticle. Explore field manifestation, advanced propulsion, and conceptual frameworks.">
+    <style>
+        :root { --blue: #0056b3; --bg: #f4f7f9; --text: #333; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 50px; }
+        
+        /* Header */
+        header { background: #fff; border-bottom: 2px solid var(--blue); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--blue); text-decoration: none; }
+
+        /* Main Container */
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .page-title { text-align: center; margin-bottom: 40px; }
+        .page-title h1 { color: var(--blue); font-size: 2.2rem; }
+        .page-title p { color: #666; margin-top: 10px; }
+
+        /* Article Cards Grid */
+        .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
+        
+        /* Individual Card */
+        .article-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; display: flex; flex-direction: column; }
+        .article-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-color: var(--blue); }
+        
+        .card-content { padding: 20px; flex-grow: 1; }
+        .category { font-size: 0.8rem; font-weight: bold; color: var(--blue); text-transform: uppercase; margin-bottom: 10px; display: block; }
+        .article-card h2 { font-size: 1.3rem; margin-bottom: 12px; color: #111; line-height: 1.4; }
+        .snippet { font-size: 0.95rem; color: #555; margin-bottom: 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        .card-footer { padding: 15px 20px; background: #fafafa; border-top: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: #777; }
+        .read-more { color: var(--blue); font-weight: 600; text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .article-grid { grid-template-columns: 1fr; }
+            .page-title h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">ONIARTICLE</a>
+    <a href="publisharticle.html" style="text-decoration:none; color:var(--blue); font-weight:bold;">+ Publish</a>
+</header>
+
+<div class="container">
+    <div class="page-title">
+        <h1>Research Library</h1>
+        <p>Exploring the boundaries of technology and theoretical postulates.</p>
+    </div>
+
+    <div class="article-grid">
+        
+        <article class="article-card">
+            <div class="card-content">
+                <span class="category">Physics / Theory</span>
+                <h2>The Peeq Vitran Postulate: A New Framework</h2>
+                <p class="snippet">Discover the hierarchical conceptual framework of field-based manifestation and its implications on modern energy systems...</p>
+            </div>
+            <div class="card-footer">
+                <span>By Anshik Pathak</span>
+                <a href="articles/peeq-vitran-postulate.html" class="read-more">Read Full →</a>
+            </div>
+        </article>
+        <article class="article-card">
+            <div class="card-content">
+                <span class="category">Person</span>
+                <h2>Anshik Pathak a young Scientists </h2>
+                <p class="snippet">Pathak was born in <span class="wiki-link">Uttar Pradesh</span>, India. From a young age, he exhibited an extraordinary aptitude for mechanical systems and theoretical abstractions. Despite being diagnosed with <span class="wiki-link">Neurodivergent</span> conditions such as <span class="wiki-link">Autism</span> and <span class="wiki-link">ADHD</span>, Pathak leveraged his unique cognitive profile to focus intensely on complex scientific problems. This hyper-focus led to the early establishment of his private research environment where he dedicated himself to unconventional ph...</p>
+            </div>
+            <div class="card-footer">
+                <span>By Anshik Pathak </span>
+                <a href="articles/Anshik_Pathak.html" class="read-more">Read Full →</a>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+</body>
+</html>

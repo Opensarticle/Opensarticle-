@@ -1,0 +1,124 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Oniarticle - Scientific Inquiry & Support</title>
+    <meta name="description" content="Get in touch with Oniarticle. Contact our editorial team for research submissions, technical queries, or collaborations in the field of theoretical physics.">
+    <meta name="keywords" content="Contact Oniarticle, Scientific Collaboration, Research Support, Anshik Pathak Contact, Submit Paper Query">
+    
+    <style>
+        :root { --blue: #004a99; --light: #f8fafc; --text: #334155; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text); background: #fff; }
+        
+        nav { background: #fff; border-bottom: 2px solid var(--blue); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.4rem; font-weight: 900; color: var(--blue); text-decoration: none; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--blue); font-weight: bold; font-size: 0.9rem; }
+
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 25px; display: flex; flex-wrap: wrap; gap: 40px; }
+        
+        /* Contact Info Side */
+        .contact-info { flex: 1; min-width: 300px; }
+        .contact-info h1 { color: var(--blue); font-size: 2.5rem; margin-bottom: 20px; }
+        .contact-info p { margin-bottom: 30px; font-size: 1.1rem; text-align: justify; }
+        
+        .info-item { margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
+        .icon-box { background: var(--blue); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+        /* Form Side */
+        .contact-form-card { flex: 1.2; min-width: 320px; background: var(--light); padding: 35px; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        input, textarea, select { width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 1rem; }
+        .btn-send { background: var(--blue); color: white; border: none; padding: 18px; border-radius: 10px; width: 100%; font-size: 1.1rem; font-weight: bold; cursor: pointer; margin-top: 10px; transition: 0.3s; }
+        .btn-send:hover { background: #003366; transform: translateY(-3px); }
+
+        /* SEO Content Section */
+        .seo-footer-text { max-width: 1000px; margin: 40px auto; padding: 0 25px; border-top: 1px solid #eee; padding-top: 40px; }
+        .seo-footer-text h2 { color: var(--blue); margin-bottom: 15px; }
+
+        footer { background: #1e293b; color: #fff; padding: 40px 20px; text-align: center; margin-top: 60px; }
+
+        @media (max-width: 768px) { .container { flex-direction: column; margin-top: 20px; } .contact-info h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">ONIARTICLE</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publisharticle.html">Publish</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="contact-info">
+        <h1>Get in Touch</h1>
+        <p>Whether you have a query regarding a published manuscript, a collaboration proposal for new theoretical research, or a technical question about the Vitran-Peeq framework, we are here to help.</p>
+        
+        <div class="info-item">
+            <div class="icon-box">L</div>
+            <div><strong>Location:</strong> Siddharth Nagar, Uttar Pradesh, India</div>
+        </div>
+        <div class="info-item">
+            <div class="icon-box">E</div>
+            <div><strong>Email:</strong> admin@oniarticle.com (Example)</div>
+        </div>
+        <div class="info-item">
+            <div class="icon-box">W</div>
+            <div><strong>WhatsApp:</strong> Professional Support Line</div>
+        </div>
+    </div>
+
+    <div class="contact-form-card">
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="subject" placeholder="Subject (e.g., Research Query)" required>
+            <select name="type">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Research Feedback">Research Feedback</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Collaboration">Collaboration Proposal</option>
+            </select>
+            <textarea id="userMsg" name="message" rows="6" placeholder="How can we help you today?" required></textarea>
+            <button type="submit" class="btn-send">Start Chat on WhatsApp</button>
+        </form>
+    </div>
+</div>
+
+<article class="seo-footer-text">
+    <h2>Global Scientific Communications</h2>
+    <p>At Oniarticle, we prioritize clear and efficient communication between the editorial board and our global community of researchers. We understand that breakthroughs in <strong>theoretical physics</strong> and <strong>field manifestation</strong> require constant dialogue and peer-to-peer feedback. Our communication lines are open to independent scientists, academic professionals, and technology enthusiasts alike.</p>
+    <p>By reaching out through this portal, you ensure that your technical questions regarding "Anshik's Constant" or "Kinetic Persistence" are addressed with the highest level of intellectual rigor. We strive to respond to all inquiries within 24-48 business hours.</p>
+</article>
+
+<footer>
+    <p>&copy; 2026 Oniarticle Research Portal | All Rights Reserved</p>
+</footer>
+
+<script>
+    document.getElementById('contactForm').onsubmit = function(e) {
+        e.preventDefault();
+        
+        let name = this.name.value;
+        let sub = this.subject.value;
+        let type = this.type.value;
+        let msg = document.getElementById('userMsg').value;
+        
+        let fullMessage = encodeURIComponent(
+            `*New Inquiry: Oniarticle Portal*\n\n` +
+            `*Name:* ${name}\n` +
+            `*Subject:* ${sub}\n` +
+            `*Category:* ${type}\n\n` +
+            `*Message:* ${msg}`
+        );
+        
+        let myNumber = "919545908154"; // BOSS: APNA NUMBER YAHAN DALEIN
+        
+        window.open(`https://wa.me/${myNumber}?text=${fullMessage}`, '_blank');
+    };
+</script>
+
+</body>
+</html>

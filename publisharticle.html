@@ -1,0 +1,134 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Article | Oniarticle - Global Knowledge Hub</title>
+    <meta name="description" content="Submit your research, technical articles, and creative papers to Oniarticle. A professional platform for authors and independent scientists to share knowledge globally.">
+    <style>
+        :root { --blue: #004a99; --light: #f4f8fb; --text: #2c3e50; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: var(--text); line-height: 1.6; }
+        
+        nav { background: #fff; border-bottom: 2px solid var(--blue); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.4rem; font-weight: 900; color: var(--blue); text-decoration: none; }
+        .back-home { text-decoration: none; color: var(--blue); font-weight: bold; font-size: 0.9rem; }
+
+        .container { max-width: 950px; margin: 30px auto; padding: 0 20px; }
+        .page-header { text-align: center; margin-bottom: 30px; }
+        .page-header h1 { color: var(--blue); font-size: 2.4rem; }
+
+        .form-card { background: #fff; border: 1px solid #e1e8ed; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        input, textarea, select { width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; }
+        
+        .word-counter { text-align: right; font-size: 0.85rem; color: #7f8c8d; font-weight: bold; }
+        .btn-submit { background: var(--blue); color: white; border: none; padding: 18px; border-radius: 8px; width: 100%; font-size: 1.1rem; font-weight: bold; cursor: pointer; margin-top: 15px; transition: 0.3s; }
+        .btn-submit:hover { background: #003366; transform: translateY(-2px); }
+
+        /* Generic Guidelines for SEO */
+        .seo-guidelines { margin-top: 50px; padding: 30px; background: var(--light); border-radius: 12px; }
+        .seo-guidelines h2 { color: var(--blue); margin-bottom: 20px; border-bottom: 2px solid #ddd; display: inline-block; }
+        .seo-guidelines p { margin-bottom: 20px; text-align: justify; font-size: 1.05rem; color: #444; }
+        .guideline-list { list-style: square; padding-left: 20px; margin-bottom: 20px; }
+        .guideline-list li { margin-bottom: 10px; }
+
+        @media (max-width: 600px) { .page-header h1 { font-size: 1.8rem; } .form-card { padding: 15px; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">ONIARTICLE</a>
+    <a href="index.html" class="back-home">← Back to Portal</a>
+</nav>
+
+<div class="container">
+    <header class="page-header">
+        <h1>Publish Your Article</h1>
+        <p>Your portal to global recognition and academic growth.</p>
+    </header>
+
+    <div class="form-card">
+        <form id="pubForm">
+            <input type="text" name="author_name" placeholder="Author's Legal Name" required>
+            <input type="text" name="article_title" placeholder="Article or Paper Title" required>
+            <input type="text" name="contact" placeholder="Email Address / WhatsApp Number" required>
+            <input type="url" name="ref_link" placeholder="Reference Link or PDF Link (Optional)">
+            
+            <textarea id="articleBody" name="article_content" rows="12" placeholder="Paste your article text here..." required></textarea>
+            <div class="word-counter" id="wCount">0 / 2000 Words</div>
+
+            <label style="font-weight: bold; margin-top: 10px; display: block;">Content Generation Method:</label>
+            <select name="content_source" required>
+                <option value="Human">Human Written (Original Content)</option>
+                <option value="AI Assisted">AI Assisted (Generated/Refined by AI)</option>
+            </select>
+
+            <button type="submit" class="btn-submit">Submit via WhatsApp</button>
+        </form>
+    </div>
+
+    <article class="seo-guidelines">
+        <h2>General Submission Guidelines</h2>
+        <p>Welcome to the <strong>Oniarticle</strong> submission portal. We are an open-access platform designed for scientists, engineers, and independent researchers to showcase their work to the world. Our primary objective is to maintain a high standard of digital literature while ensuring maximum discoverability through search engine optimization.</p>
+        
+        <ul class="guideline-list">
+            <li><strong>Word Limit:</strong> For optimal SEO performance, we recommend articles between 1000 and 2000 words. Submissions under 1000 words may be flagged as "thin content" and might face delayed indexing.</li>
+            <li><strong>Authorship:</strong> Please provide your full legal name as it should appear on the published page. Anonymous submissions are currently not accepted.</li>
+            <li><strong>Integrity Labels:</strong> It is mandatory to disclose if your article was written by a human or assisted by AI. This helps us apply the correct "Metadata Label" for search engine transparency.</li>
+            <li><strong>Formatting:</strong> Ensure your text is organized into clear paragraphs. Use of sub-headings is encouraged to improve readability and user engagement scores.</li>
+            <li><strong>Review Process:</strong> All submissions undergo a manual verification by the Oniarticle admin panel. Approved articles usually go live within 24 to 48 hours.</li>
+        </ul>
+
+        <p>By publishing on Oniarticle, you join a growing ecosystem of modern thinkers. Whether you are submitting a paper on <strong>Aerospace Engineering</strong>, <strong>Digital Marketing</strong>, or <strong>Theoretical Manifestation</strong>, our platform ensures your voice is heard without the hurdles of complex peer-review paywalls. We believe that knowledge should be free, accessible, and highly optimized for the digital age.</p>
+        
+        <p>Note: Once you click submit, you will be redirected to WhatsApp to share your final draft. Our admin will then verify the content for quality and SEO standards before the final upload to the Oniarticle server.</p>
+    </article>
+</div>
+
+<footer style="text-align: center; padding: 40px; border-top: 1px solid #eee; margin-top: 40px; font-size: 0.9rem; color: #888;">
+    &copy; 2026 Oniarticle | Empowering Independent Research
+</footer>
+
+<script>
+    // Word Counting Logic
+    const contentArea = document.getElementById('articleBody');
+    const wordDisplay = document.getElementById('wCount');
+
+    contentArea.addEventListener('input', function() {
+        let words = this.value.trim().split(/\s+/).filter(item => item).length;
+        wordDisplay.innerText = words + " / 2000 Words";
+        if (words > 2000) {
+            alert("Warning: Articles over 2000 words may require special formatting.");
+            this.value = this.value.split(/\s+/).slice(0, 2000).join(" ");
+        }
+    });
+
+    // WhatsApp Redirect Logic
+    document.getElementById('pubForm').onsubmit = function(e) {
+        e.preventDefault();
+        
+        let author = this.author_name.value;
+        let title = this.article_title.value;
+        let contact = this.contact.value;
+        let source = this.content_source.value;
+        let article = document.getElementById('articleBody').value;
+        
+        let message = encodeURIComponent(
+            `*ONİARTİCLE NEW SUBMISSION*\n\n` +
+            `*Author:* ${author}\n` +
+            `*Title:* ${title}\n` +
+            `*Contact:* ${contact}\n` +
+            `*Written By:* ${source}\n\n` +
+            `*Content Preview (First 500 chars):*\n${article.substring(0, 500)}...`
+        );
+        
+        let myNumber = "919545908154"; // APNA NUMBER YAHAN DALEIN
+        
+        alert("Redirecting to WhatsApp... Please send the full text to the Admin once the chat opens.");
+        window.open(`https://wa.me/${myNumber}?text=${message}`, '_blank');
+    };
+</script>
+
+</body>
+</html>
